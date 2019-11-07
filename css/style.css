@@ -1,0 +1,315 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Georgia', sans-serif;
+  /* margin: 0; */
+  /* padding: 0; */
+  font-size: 14pt;
+  background-color: pink;
+}
+
+.skipcont a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skipcont a:focus{
+  top: 0;
+}
+
+body#home a.home, body#experience a.experience, body#gallery a.gallery, body#contact a.contact, body#coursework a.coursework{
+  background-color: grey;
+  text-decoration: none;
+}
+
+nav li{
+  display: block;
+  color: white;
+  text-decoration:none;
+  padding: 10px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+nav a:hover{
+  background-color: black;
+}
+
+@keyframes rainbow-header {
+  0%   {background-color: red;}
+  15%  {background-color: orange;}
+  25%  {background-color: yellow;}
+  50%  {background-color: green;}
+  75%  {background-color: blue;}
+}
+
+#main{
+  animation-name: rainbow-header;
+  animation-duration: 4s;
+  /* width: 100px; */
+}
+
+h1{
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px grey;
+  /* animation-name: example;
+  animation-duration: 4s; */
+  /* line-height: 2; */
+}
+
+h2{
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  /* line-height: 2; */
+}
+
+h3{
+  font-size: 16pt;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  /* line-height: 1.5; */
+}
+
+p {
+  padding: 0 80px;
+}
+
+footer{
+  background-color: grey;
+  color: white;
+  text-align: center;
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 75px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+}
+
+.nav{
+  grid-column: 1/-1;
+}
+
+.main{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.intro-img{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.bio{
+  grid-column: 1/-1;
+}
+
+.experienceImg{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.resume{
+  grid-column: 1/-1;
+}
+
+.contactImage{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.contactInfo{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.form{
+  grid-column: 1/-1;
+  padding: 75px 50px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.courses h2{
+  background-attachment: fixed;
+  background-image: url("../images/headshot.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 800px;
+}
+.courses{
+  grid-column: 1/-1;
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+
+  nav li{
+    display: inline-block;
+    padding:5px;
+  }
+
+  .main{
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+
+  header{
+    grid-column: 1/span 2;
+  }
+
+  footer{
+    grid-column: 1/span 2;
+  }
+
+  .intro-img{
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+
+  .bio h2{
+    grid-column: 1/span 2;
+  }
+
+  .bio{
+    grid-column: 1/span 2;
+  }
+
+  .resume h2{
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .resume h3{
+  text-align: left;
+  padding-left: 75px;
+  }
+
+  .galleryHead h2{
+    grid-column: 1/span 2;
+    text-align: center;
+  }
+
+  .courses h2{
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  .courses h3{
+    text-align: left;
+    padding-left: 75px;
+  }
+
+}
+
+@media only screen and (min-width: 1020px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
+
+  .nav{
+    text-align: right;
+  }
+
+  .main{
+    grid-column: 1/span 3;
+    text-align: center;
+  }
+
+  header{
+    grid-column: 1/span 3;
+  }
+
+  footer{
+    grid-column: 1/span 3;
+  }
+
+  .intro-img{
+    grid-column: 1/span 3;
+    text-align: center;
+  }
+
+  .bio h2{
+    grid-column: 1/span 3;
+  }
+
+  .bio{
+    grid-column: 1/span 3;
+  }
+
+  .resume h2{
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .resume h3{
+    text-align: center;
+  }
+
+  .galleryHead h2{
+    grid-column: 1/span 3;
+    text-align: center;
+  }
+
+}
+
+/* reduced motion media query */
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: initial;
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
