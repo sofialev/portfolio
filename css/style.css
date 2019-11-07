@@ -7,7 +7,7 @@ body{
   /* margin: 0; */
   /* padding: 0; */
   font-size: 14pt;
-  background-color: #ff80d5;
+  background-color: #e6ccff;
 }
 
 .skipcont a{
@@ -26,7 +26,7 @@ body{
 }
 
 body#home a.home, body#experience a.experience, body#gallery a.gallery, body#contact a.contact, body#coursework a.coursework{
-  background-color: #4d4d4d;
+  background-color: #a6a6a6;
   text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ nav li{
 }
 
 nav a{
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 14px 16px;
 }
