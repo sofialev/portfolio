@@ -168,6 +168,8 @@ footer{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  font-weight: 900;
+  /* background-color: #a6a6a6; */
   height: 800px;
 }
 .courses{
