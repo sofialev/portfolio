@@ -26,7 +26,7 @@ body{
 }
 
 body#home a.home, body#experience a.experience, body#gallery a.gallery, body#contact a.contact, body#coursework a.coursework{
-  background-color: grey;
+  background-color: #4d4d4d;
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ p {
 }
 
 footer{
-  background-color: grey;
+  background-color: #4d4d4d;
   color: white;
   text-align: center;
   /* position: fixed; */
